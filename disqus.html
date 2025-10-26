@@ -1,0 +1,15 @@
+<!-- _includes/disqus.html -->
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = '{{ page.url | absolute_url }}'; // 页面URL，供Disqus识别
+    this.page.identifier = '{{ page.id }}'; // 页面唯一标识
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://weapon-merchant-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>请启用JavaScript以查看 <a href="https://disqus.com/?ref_noscript">Disqus 评论</a></noscript>
